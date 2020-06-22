@@ -1,0 +1,21 @@
+{
+  "name": "sequelize_stretch",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "db-init": "createdb sequelize_stretch",
+    "postinstall": "npm run db-init",
+    "test": "./node_modules/.bin/jest",
+    "test:watch": "./node_modules/.bin/jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.2.1",
+    "sequelize": "^5.21.13"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
