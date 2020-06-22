@@ -9,7 +9,7 @@ describe('The Recipe Model', () => {
 
   afterEach(() => {
     // erase all tables after each spec
-    // return db.sync({ force: true });
+    return db.sync({ force: true });
   });
 
   test('The Recipe model is defined with a name column with type string.', async () => {
